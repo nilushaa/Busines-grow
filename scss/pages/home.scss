@@ -1,0 +1,103 @@
+.card {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b1937;
+    border-radius: 0.8rem;
+  }
+  .cards {
+    padding: 7.1rem;
+  }
+  .card__title {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 44px;
+    margin-bottom: 2.5rem;
+  }
+  .violet-text {
+    color: #ab5cdb;
+  }
+  .card__description {
+    width: 374px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 75%;
+    margin-bottom: 7.2rem;
+  }
+  .card__stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card__stat--text {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    opacity: 60%;
+  }
+  .card__stat--number {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 0.2rem;
+  }
+  
+  .card__image-content {
+    top: 15.5rem;
+    left: 62.6rem;
+    opacity: 0.75;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .card {
+      width: 375px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .cards {
+      padding-top: 4rem;
+      padding-left: 3.15rem;
+      padding-right: 3.15rem;
+      padding-bottom: 3.2rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .card__title {
+      width: 264px;
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-bottom: 1.6rem;
+    }
+    .card__description {
+      width: 264px;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .card__stats {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+    .card__stat--text {
+      text-align: center;
+    }
+    .card__stat--number {
+      text-align: center;
+    }
+    .card__image-content {
+      width: 375px;
+      height: 265px;
+      background-image: url(../../images/bitmap-mobile.png);
+      background-size: cover;
+      background-position: top center;
+    }
+  }
